@@ -70,12 +70,14 @@ y_train = scaler_y.inverse_transform(np.array(y_train).reshape((len(y_train), 1)
 
 plt.plot(y_train)
 plt.plot(pred2)
+plt.title('train')
 plt.show()
 
 errors = y_test - pred
 
 plt.plot(y_test)
 plt.plot(pred)
+plt.title('test')
 plt.show()
 
 df = pd.DataFrame(y_train,columns = ['Actuals'])
@@ -83,3 +85,4 @@ df['Predictions'] = pred2
 
 df_test = pd.DataFrame(y_test,columns = ['Actuals'])
 df_test['Predictions'] = pred
+
