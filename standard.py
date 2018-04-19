@@ -8,7 +8,7 @@ import pandas as pd
 from sklearn import preprocessing
 
 """READ DATA"""
-df = pd.read_excel('P:/Coding/Modelling/IUK/IUK_data_PCA.xlsx')
+
 df = df['2015-10-01':]
 
 predictors = ['Basis', 'NBP/TTF', 'NCG/TTF', 'VTP/TTF', 'PEGN/TTF', 'PSV/TTF', 'UK T',
